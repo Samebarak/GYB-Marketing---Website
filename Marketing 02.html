@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartMarketing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #4CAF50, #2e8b57);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #2e8b57;
+            font-weight: bold;
+           display: inline-block;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .features, .pricing, .testimonials {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            background: white;
+            flex: 1 1 300px;
+            max-width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        .box h3 {
+            color: #4CAF50;
+        }
+
+        .cta {
+            background: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .cta button {
+            padding: 12px 30px;
+            font-size: 16px;
+            border: none;
+            background-color: white;
+            color: #2e8b57;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+ input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #444;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Responsive Adjustments */
+        @media screen and (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .features, .pricing, .testimonials {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Grow Your Business with SmartMarketing</h1>
+    <p>Reach more customers. Boost engagement. Drive success.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="section" id="features">
+    <h2 style="text-align:center;">Our Features</h2>
+    <div class="features">
+        <div class="box">
+            <h3>📈 Marketing Analytics</h3>
+            <p>Track campaign performance and customer behavior with easy-to-read dashboards.</p>
+        </div>
+        <div class="box">
+            <h3>🎯 Targeted Campaigns</h3>
+            <p>Launch email and social campaigns tailored to your ideal audience segments.</p>
+        </div>
+        <div class="box">
+            <h3>⚡ Fast Setup</h3>
+            <p>Get started in minutes with our simple onboarding and dedicated support.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="pricing">
+    <h2 style="text-align:center;">Pricing Plans</h2>
+    <div class="pricing">
+        <div class="box">
+            <h3>Starter</h3>
+            <p><strong>29/month</strong></p>
+            <p>✔ Basic Analytics<br>✔ 1 User<br>✔ Email Support</p>
+        </div>
+        <div class="box">
+            <h3>Pro</h3>
+            <p><strong>79/month</strong></p>
+            <p>✔ Full Analytics<br>✔ 5 Users<br>✔ Priority Support</p>
+        </div>
+        <div class="box">
+            <h3>Enterprise</h3>
+            <p><strong>$199/month</strong></p>
+            <p>✔ Unlimited Access<br>✔ Dedicated Manager<br>✔ Custom Integrations</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="testimonials">
+    <h2 style="text-align:center;">What Our Clients Say</h2>
+    <div class="testimonials">
+        <div class="box">
+            <p>“SmartMarketing helped us double our leads in just 60 days!”</p>
+            <strong>- Asha, Startup Founder</strong>
+        </div>
+        <div class="box">
+            <p>“Professional, simple, and affordable. I highly recommend them.”</p>
+            <strong>- John, Business Coach</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <div class="form-container">
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="5" required></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 SmartMarketing. All rights reserved.
+</footer>
+</body>
+</html>
